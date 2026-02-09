@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(to right, #6dcdda, #dcffdf);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.password-container{
+  background-color: pink;
+  width: 100%;
+  max-width: 500px;
+  height: 200px;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.password-container h2{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.input-container{
+  border: solid 2px black;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input{
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.input::placeholder{
+  letter-spacing: 0;
+}
+
+.fa-copy{
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.2s;
+}
+
+.fa-copy:hover{
+  opacity: 0.7;
+}
+
+.btn{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.btn:hover{
+  background-color: green;
+  cursor: pointer;
+}
+
+.btn:active{
+  transform: scale(0.95);
+}
+
+.alert-container {
+  position: fixed;
+  width: 250px;
+  height: 50px;
+  background-color: lightgreen;
+  right: -300px;
+  bottom: 20px;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: right 0.4s ease, opacity 0.4s ease;
+}
+
+.alert-container.active {
+  right: 20px;
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .password-container {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .input {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .password-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .password-container {
+    width: 500px;
+  }
+}
+
+
+

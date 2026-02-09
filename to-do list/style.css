@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+h1{
+  color: rgb(13, 250, 131);
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.container{
+  position: absolute;
+  top: 10%;
+}
+
+.form{
+  box-shadow: 0 4px 8px rgba(214, 213, 213, 0.3);
+  background: linear-gradient(135deg, #5ed04f, #efd0da);
+  color: rgb(21, 21, 21);
+  width: 400px;
+  border-radius: 10px;
+}
+
+.input{
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  outline:none;
+  font-size: 20px;
+}
+
+input::placeholder{
+  color: lightgray;
+}
+
+.list li{
+  list-style-type: none;
+  padding: 15px;
+  border-top: dotted;
+  border-color: rgb(252, 134, 134);
+  font-family: cursive;
+  font-size: 20px;
+  position: relative;
+}
+
+.fa-trash{
+  color: rgb(178, 59, 59);
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.fa-check-square{
+  color: rgb(178, 59, 59);
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.list .checked{
+  color: rgb(125, 104, 104);
+  text-decoration: line-through;
+}
+
+.list .checked .fa-check-square{
+  color: rgb(180, 157, 157);
+}
+
+
+
+
+
+
+
